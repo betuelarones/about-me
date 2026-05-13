@@ -8,7 +8,7 @@ function Hero() {
           <h1 className="mega-title">Betuel.</h1>
           <h1 className="mega-title subtitle">Construyo experiencias<br/><span className="mega-title">digitales.</span></h1>
           <p className="hero-desc">
-            Soy un Ingeniero de Software especializado en crear arquitecturas robustas y experiencias visuales inmersivas en la web usando tecnologías 3D y frameworks modernos.
+            Soy un Desarrollador Fullstack especializado en crear aplicaciones web robustas y escalables, combinando backend eficiente con interfaces modernas y experiencias de usuario excepcionales.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn-primary">Explorar Sistema</a>
