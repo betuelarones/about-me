@@ -5,8 +5,10 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Stats from './components/Stats'
 import Experience from './components/Experience'
+import Education from './components/Education'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import ThreeBackground from './components/ThreeBackground'
 import './App.css'
 
@@ -25,6 +27,7 @@ function App() {
   }, [])
 
   useEffect(() => {
+    const revealNodes = document.querySelectorAll('.reveal-zone')
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -34,12 +37,10 @@ function App() {
           }
         })
       },
-      { threshold: 0.1 }
+      { threshold: 0.12 }
     )
 
-    document.querySelectorAll('.reveal-zone').forEach((el) => {
-      observer.observe(el)
-    })
+    revealNodes.forEach((node) => observer.observe(node))
 
     return () => observer.disconnect()
   }, [])
@@ -57,9 +58,11 @@ function App() {
         <About />
         <Stats />
         <Experience />
+        <Education />
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   )
 }

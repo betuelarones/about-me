@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "about": "01. Sobre mí",
+    "experience": "02. Experiencia",
+    "projects": "03. Proyectos",
+    "contact": "04. Contacto"
+  },
+  "common": {
+    "status": "Estado",
+    "online": "En línea",
+    "viewProjects": "Ver mis proyectos",
+    "contactMe": "Contáctame",
+    "downloadCv": "Descargar CV",
+    "language": "Idioma",
+    "github": "GitHub",
+    "liveDemo": "Demo en vivo",
+    "send": "Enviar mensaje",
+    "findMe": "Encuéntrame",
+    "footerNote": "Desarrollado con React y un enfoque en software limpio, escalable y mantenible."
+  },
+  "hero": {
+    "eyebrow": "Hola, mi nombre es",
+    "name": "Betuel.",
+    "headline": "Construyo software que conecta tecnología, producto y negocio.",
+    "description": "Soy un Software Engineer con enfoque en backend, APIs, experiencia de usuario y soluciones escalables. Me interesa contribuir en proyectos desafiantes, con equipos ágiles y oportunidades remotas internacionales.",
+    "specialty": "Full Stack Developer • Backend Engineer"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "intro": "Me apasiona transformar ideas complejas en software funcional, ordenado y fácil de mantener. Mi enfoque combina lógica de backend, buenas prácticas de ingeniería y atención a la experiencia de usuario.",
+    "lookingForTitle": "Qué estoy buscando",
+    "lookingFor": "Busco oportunidades como Software Engineer, Full Stack Developer o Backend Developer en equipos internacionales, con enfoque en producto, ingeniería de software y aprendizaje continuo.",
+    "skillsTitle": "Tecnologías y herramientas",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "databases": "Bases de datos",
+      "cloud": "Cloud & DevOps"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "technologies": "Tecnologías",
+    "softSkills": "Habilidades blandas",
+    "about": "Sobre esta experiencia",
+    "viewMore": "Ver experiencia",
+    "pageLabel": "EXPERIENCE",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "page": "Página",
+    "navigationLabel": "Navegación de la experiencia",
+    "currentBadge": "CURRENT",
+    "cover": {
+      "kicker": "EXPERIENCE",
+      "title": "My Journey",
+      "subtitle": "as a Software Developer",
+      "name": "Betuel",
+      "meta": "Software Engineering · Leadership · Product Development"
+    },
+    "backcover": {
+      "kicker": "END",
+      "title": "The next chapter",
+      "description": "Construyendo software con impacto, criterio técnico y visión de producto."
+    },
+    "items": [
+      {
+        "organization": "LEAD TECSUP",
+        "role": "Branch Director / Leadership",
+        "dates": "",
+        "description": "He desarrollado experiencia de liderazgo en LEAD TECSUP, enfocada en la coordinación del equipo, la comunicación, la organización y la colaboración. Este rol me ha permitido fortalecer mi capacidad para liderar procesos, apoyar decisiones y colaborar en la dirección de actividades y equipos.",
+        "technologies": [],
+        "softSkills": ["Liderazgo", "Gestión de equipos", "Comunicación", "Organización", "Coordinación de proyectos", "Colaboración", "Toma de decisiones", "Resolución de problemas"],
+        "badge": "LT",
+        "category": "Leadership",
+        "current": false,
+        "image": "/images/lead.avif"
+      },
+      {
+        "organization": "Computer Society TECSUP",
+        "role": "IEEE / Student Branch Leadership",
+        "dates": "",
+        "description": "Representé y participé en actividades de la Computer Society de TECSUP, contribuyendo al trabajo en equipo, la comunicación y la organización dentro de la comunidad tecnológica. Mi participación se centró en apoyar la colaboración y el desarrollo de actividades relacionadas con la tecnología y el software.",
+        "technologies": [],
+        "softSkills": ["Liderazgo", "Trabajo en equipo", "Comunicación", "Organización", "Coordinación de eventos", "Resolución de problemas", "Colaboración"],
+        "badge": "CS",
+        "category": "Leadership / Technology Community",
+        "current": false,
+        "image": "/images/ieee.avif"
+      },
+      {
+        "organization": "Sanz Solutions",
+        "role": "Frontend Developer Intern",
+        "dates": "Prácticas",
+        "description": "Contribuí al desarrollo frontend con Astro y Tailwind CSS, trabajando con REST APIs e implementando interfaces enfocadas en la experiencia de usuario. Participé en un entorno de desarrollo colaborativo, donde se priorizó la resolución de problemas, la comunicación y la mejora continua.",
+        "technologies": ["Astro", "Tailwind CSS", "REST APIs"],
+        "softSkills": ["Trabajo en equipo", "Comunicación", "Resolución de problemas", "Adaptabilidad", "Aprendizaje continuo", "Atención al detalle"],
+        "badge": "SZ",
+        "category": "Frontend Development",
+        "current": false,
+        "image": "/images/Sanz.avif"
+      },
+      {
+        "organization": "TIYUY",
+        "role": "Co-Founder & Software Developer",
+        "dates": "",
+        "description": "Soy cofundador de TIYUY y participo activamente en el desarrollo del producto, contribuyendo a la construcción técnica, la toma de decisiones y la colaboración con el equipo. Esta experiencia combina emprendimiento y desarrollo de software, con enfoque en la visión del producto, la resolución de problemas y el trabajo ágil.",
+        "technologies": ["Product Development", "Agile / Scrum"],
+        "softSkills": ["Liderazgo", "Emprendimiento", "Trabajo en equipo", "Comunicación", "Resolución de problemas", "Pensamiento de producto", "Adaptabilidad", "Aprendizaje continuo"],
+        "badge": "TY",
+        "category": "Entrepreneurship / Product Development / Software Engineering",
+        "current": false,
+        "image": "/images/tiyuy.avif"
+      },
+      {
+        "organization": "Current Role",
+        "role": "QA & Full Stack Developer",
+        "dates": "Actualidad",
+        "description": "Actualmente desempeño un rol de QA & Full Stack Developer, contribuyendo tanto al desarrollo frontend como backend con enfoque en la calidad del software, pruebas, depuración y entrega fiable de soluciones. Mi trabajo combina desarrollo full stack, análisis de problemas y mejora continua de la experiencia y estabilidad de la aplicación.",
+        "technologies": ["NestJS", "Next.js"],
+        "softSkills": ["Pensamiento analítico", "Resolución de problemas", "Atención al detalle", "Trabajo en equipo", "Comunicación", "Adaptabilidad", "Aprendizaje continuo"],
+        "badge": "QA",
+        "category": "QA / Full Stack / Software Development",
+        "current": true,
+        "image": "/images/Laboral.avif"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "featured": "Proyecto destacado",
+    "cards": [
+      {
+        "name": "Portfolio Ready",
+        "description": "Estructura preparada para mostrar proyectos reales, con imágenes, stack tecnológico y enlaces de GitHub/demo cuando estén disponibles.",
+        "tech": ["React", "TypeScript", "Vite"],
+        "github": "#",
+        "demo": "#"
+      },
+      {
+        "name": "Case Study Template",
+        "description": "Diseño reusable para presentar soluciones desarrolladas, objetivos del proyecto, tecnologías aplicadas y resultados de negocio.",
+        "tech": ["Java", "Spring Boot", "REST API"],
+        "github": "#",
+        "demo": "#"
+      },
+      {
+        "name": "Backend Showcase",
+        "description": "Plantilla para destacar servicios, integración con bases de datos y soluciones de arquitectura backend escalables.",
+        "tech": ["Node.js", "PostgreSQL", "AWS"],
+        "github": "#",
+        "demo": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "¿Trabajamos juntos?",
+    "description": "Estoy abierto a oportunidades remotas, proyectos internacionales y conversaciones sobre ingeniería de software, backend, APIs y productos digitales.",
+    "name": "Tu nombre",
+    "email": "Tu correo",
+    "message": "Escribe tu mensaje",
+    "ariaName": "Nombre",
+    "ariaEmail": "Correo electrónico",
+    "ariaMessage": "Mensaje",
+    "success": "Mensaje enviado correctamente."
+  },
+  "footer": {
+    "copyright": "© 2026 Betuel. Todos los derechos reservados."
+  },
+  "preloader": {
+    "text": "INICIANDO ENTORNO..."
+  }
+}

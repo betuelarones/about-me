@@ -1,32 +1,38 @@
+import { type FormEvent } from 'react'
+import { useTranslation } from 'react-i18next'
+
 function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { t } = useTranslation()
+
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    alert('Mensaje enviado correctamente!')
+    alert(t('contact.success'))
   }
 
   return (
     <section id="contact" className="fullscreen">
       <div className="content-wrapper glass-panel reveal-zone text-center">
-        <h2 className="section-title"><span className="mono-text">04.</span> ¿Iniciamos un proyecto?</h2>
-        <p style={{ marginBottom: '30px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-          Mi bandeja de entrada está abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible para responderte!
-        </p>
+        <h2 className="section-title"><span className="mono-text">04.</span> {t('contact.title')}</h2>
+        <p className="contact-lead">{t('contact.description')}</p>
         <form className="contact-form" onSubmit={handleSubmit}>
-          <input type="text" placeholder="Nombre de usuario" required />
-          <input type="email" placeholder="Email de enlace" required />
-          <textarea rows={5} placeholder="Cuerpo del mensaje..." required></textarea>
-          <button type="submit" className="btn-primary">Enviar Transmisión</button>
+          <label className="sr-only" htmlFor="name">{t('contact.ariaName')}</label>
+          <input id="name" type="text" placeholder={t('contact.name')} required aria-label={t('contact.ariaName')} />
+          <label className="sr-only" htmlFor="email">{t('contact.ariaEmail')}</label>
+          <input id="email" type="email" placeholder={t('contact.email')} required aria-label={t('contact.ariaEmail')} />
+          <label className="sr-only" htmlFor="message">{t('contact.ariaMessage')}</label>
+          <textarea id="message" rows={5} placeholder={t('contact.message')} required aria-label={t('contact.ariaMessage')}></textarea>
+          <button type="submit" className="btn-primary">{t('common.send')}</button>
         </form>
-        <div className="social-links" style={{ marginTop: '40px', paddingTop: '30px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-          <p className="mono-text" style={{ color: 'var(--text-muted)', marginBottom: '20px', fontSize: '0.9rem' }}>ENCUÉNTRAME EN</p>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '30px' }}>
-            <a href="https://github.com/betuelarones" target="_blank" rel="noopener noreferrer" className="social-icon-link">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style={{ width: '32px', height: '32px', filter: 'invert(1)' }} />
-              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '8px', display: 'block' }}>GitHub</span>
+        <div className="social-links">
+          <p className="mono-text social-title">{t('common.findMe')}</p>
+          <div className="social-row">
+            <a href="https://github.com/betuelarones" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+              <span>GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/betuel-jesus-arones-silva/" target="_blank" rel="noopener noreferrer" className="social-icon-link">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style={{ width: '32px', height: '32px' }} />
-              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '8px', display: 'block' }}>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/betuel-jesus-arones-silva/" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="LinkedIn">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>

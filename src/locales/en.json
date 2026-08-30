@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "about": "01. About Me",
+    "experience": "02. Experience",
+    "projects": "03. Projects",
+    "contact": "04. Contact"
+  },
+  "common": {
+    "status": "Status",
+    "online": "Online",
+    "viewProjects": "View my projects",
+    "contactMe": "Contact me",
+    "downloadCv": "Download CV",
+    "language": "Language",
+    "github": "GitHub",
+    "liveDemo": "Live demo",
+    "send": "Send message",
+    "findMe": "Find me",
+    "footerNote": "Built with React and a focus on clean, scalable, and maintainable software."
+  },
+  "hero": {
+    "eyebrow": "Hi, my name is",
+    "name": "Betuel.",
+    "headline": "I build software that connects technology, product, and business goals.",
+    "description": "I am a Software Engineer focused on backend development, APIs, user experience, and scalable solutions. I am looking for challenging projects, agile teams, and international remote opportunities.",
+    "specialty": "Full Stack Developer • Backend Engineer"
+  },
+  "about": {
+    "title": "About me",
+    "intro": "I enjoy turning complex ideas into functional, well-structured software that is easy to maintain. My work combines backend logic, software engineering best practices, and attention to product experience.",
+    "lookingForTitle": "What I am looking for",
+    "lookingFor": "I am looking for opportunities as a Software Engineer, Full Stack Developer, or Backend Developer in international teams, with a focus on product development, software engineering, and continuous learning.",
+    "skillsTitle": "Technologies and tools",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "databases": "Databases",
+      "cloud": "Cloud & DevOps"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "technologies": "Technologies",
+    "softSkills": "Soft skills",
+    "about": "About this role",
+    "viewMore": "View experience",
+    "pageLabel": "EXPERIENCE",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "navigationLabel": "Experience navigation",
+    "currentBadge": "CURRENT",
+    "cover": {
+      "kicker": "EXPERIENCE",
+      "title": "My Journey",
+      "subtitle": "as a Software Developer",
+      "name": "Betuel",
+      "meta": "Software Engineering · Leadership · Product Development"
+    },
+    "backcover": {
+      "kicker": "END",
+      "title": "The next chapter",
+      "description": "Building software with impact, engineering judgment, and product vision."
+    },
+    "items": [
+      {
+        "organization": "LEAD TECSUP",
+        "role": "Branch Director / Leadership",
+        "dates": "",
+        "description": "I have developed leadership experience at LEAD TECSUP, focused on team coordination, communication, organization, and collaboration. This role has strengthened my ability to support decision-making, guide teams, and contribute to smooth project and team coordination.",
+        "technologies": [],
+        "softSkills": ["Leadership", "Team Management", "Communication", "Organization", "Project Coordination", "Collaboration", "Decision Making", "Problem Solving"],
+        "badge": "LT",
+        "category": "Leadership",
+        "current": false,
+        "image": "/images/lead.avif"
+      },
+      {
+        "organization": "Computer Society TECSUP",
+        "role": "IEEE / Student Branch Leadership",
+        "dates": "",
+        "description": "I represented and participated in activities of the Computer Society at TECSUP, contributing to teamwork, communication, and organization within the technology community. My involvement was centered on supporting collaboration and participation in activities related to technology and software development.",
+        "technologies": [],
+        "softSkills": ["Leadership", "Teamwork", "Communication", "Organization", "Event Coordination", "Problem Solving", "Collaboration"],
+        "badge": "CS",
+        "category": "Leadership / Technology Community",
+        "current": false,
+        "image": "/images/ieee.avif"
+      },
+      {
+        "organization": "Sanz Solutions",
+        "role": "Frontend Developer Intern",
+        "dates": "Internship",
+        "description": "I contributed to frontend development using Astro and Tailwind CSS, working with REST APIs and implementing user-facing interfaces. I collaborated in a software development environment focused on problem solving, communication, and continuous improvement.",
+        "technologies": ["Astro", "Tailwind CSS", "REST APIs"],
+        "softSkills": ["Teamwork", "Communication", "Problem Solving", "Adaptability", "Continuous Learning", "Attention to Detail"],
+        "badge": "SZ",
+        "category": "Frontend Development",
+        "current": false,
+        "image": "/images/Sanz.avif"
+      },
+      {
+        "organization": "TIYUY",
+        "role": "Co-Founder & Software Developer",
+        "dates": "",
+        "description": "I am a Co-Founder & Software Developer at TIYUY, actively contributing to product development, technical decisions, and collaboration with the development team. This experience combines entrepreneurship and software development, with a focus on product vision, problem solving, and agile teamwork.",
+        "technologies": ["Product Development", "Agile / Scrum"],
+        "softSkills": ["Leadership", "Entrepreneurship", "Teamwork", "Communication", "Problem Solving", "Product Thinking", "Adaptability", "Continuous Learning"],
+        "badge": "TY",
+        "category": "Entrepreneurship / Product Development / Software Engineering",
+        "current": false,
+        "image": "/images/tiyuy.avif"
+      },
+      {
+        "organization": "Current Role",
+        "role": "QA & Full Stack Developer",
+        "dates": "Current",
+        "description": "I currently work as a QA & Full Stack Developer, contributing to both frontend and backend development while focusing on software quality, testing, debugging, and reliable application delivery. My work combines full stack development, problem analysis, and continuous improvement of product stability and user experience.",
+        "technologies": ["NestJS", "Next.js"],
+        "softSkills": ["Analytical Thinking", "Problem Solving", "Attention to Detail", "Teamwork", "Communication", "Adaptability", "Continuous Learning"],
+        "badge": "QA",
+        "category": "QA / Full Stack / Software Development",
+        "current": true,
+        "image": "/images/Laboral.avif"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "featured": "Featured project",
+    "cards": [
+      {
+        "name": "Portfolio Ready",
+        "description": "A structure prepared to showcase real projects, including images, technology stack, and GitHub/demo links when available.",
+        "tech": ["React", "TypeScript", "Vite"],
+        "github": "#",
+        "demo": "#"
+      },
+      {
+        "name": "Case Study Template",
+        "description": "A reusable layout for presenting developed products, project objectives, technologies used, and business outcomes.",
+        "tech": ["Java", "Spring Boot", "REST API"],
+        "github": "#",
+        "demo": "#"
+      },
+      {
+        "name": "Backend Showcase",
+        "description": "A presentation template for services, database integration, and scalable backend architecture solutions.",
+        "tech": ["Node.js", "PostgreSQL", "AWS"],
+        "github": "#",
+        "demo": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let’s build something meaningful",
+    "description": "I am open to remote roles, international opportunities, and conversations about software engineering, backend systems, APIs, and digital products.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Write your message",
+    "ariaName": "Name",
+    "ariaEmail": "Email address",
+    "ariaMessage": "Message",
+    "success": "Message sent successfully."
+  },
+  "footer": {
+    "copyright": "© 2026 Betuel. All rights reserved."
+  },
+  "preloader": {
+    "text": "STARTING ENVIRONMENT..."
+  }
+}

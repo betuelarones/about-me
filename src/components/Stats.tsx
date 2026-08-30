@@ -5,15 +5,15 @@ function Stats() {
         <div className="stats-grid">
           <div className="stat-box">
             <h3>+5</h3>
-            <p>Años Exp.</p>
+            <p>Years of learning</p>
           </div>
           <div className="stat-box">
-            <h3>+50</h3>
-            <p>Repositorios</p>
+            <h3>+4</h3>
+            <p>Core stacks</p>
           </div>
           <div className="stat-box">
             <h3>100%</h3>
-            <p>Compromiso</p>
+            <p>Ownership mindset</p>
           </div>
         </div>
       </div>

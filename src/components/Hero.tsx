@@ -1,22 +1,28 @@
+import { useTranslation } from 'react-i18next'
+
+const cvFileUrl = '/CV_Betuel_Arones_Silva.pdf'
+const cvDownloadName = 'Betuel-CV.pdf'
 
 function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section id="hero" className="fullscreen">
       <div className="content-wrapper reveal-zone hero-layout">
         <div className="hero-text">
-          <h3 className="mono-text accent">Hola, mi nombre es</h3>
-          <h1 className="mega-title">Betuel.</h1>
-          <h1 className="mega-title subtitle">Construyo experiencias<br/><span className="mega-title">digitales.</span></h1>
-          <p className="hero-desc">
-            Soy un Desarrollador Fullstack especializado en crear aplicaciones web robustas y escalables, combinando backend eficiente con interfaces modernas y experiencias de usuario excepcionales.
-          </p>
+          <p className="mono-text accent hero-kicker">{t('hero.eyebrow')}</p>
+          <h1 className="mega-title">{t('hero.name')}</h1>
+          <h2 className="mega-title subtitle">{t('hero.headline')}</h2>
+          <p className="hero-specialty mono-text">{t('hero.specialty')}</p>
+          <p className="hero-desc">{t('hero.description')}</p>
           <div className="hero-buttons">
-            <a href="#projects" className="btn-primary">Explorar Sistema</a>
-            <a href="/CV-Betuel.pdf" className="btn-primary" download="CV-Betuel.pdf">⬇️ Descargar CV</a>
+            <a href="#projects" className="btn-primary">{t('common.viewProjects')}</a>
+            <a href="#contact" className="btn-secondary">{t('common.contactMe')}</a>
+            <a href={cvFileUrl} className="btn-primary" download={cvDownloadName}>{t('common.downloadCv')}</a>
           </div>
         </div>
-          <div className="hero-image">
-          <img src="/profile.jpg" alt="Betuel" className="profile-photo" />
+        <div className="hero-image">
+          <img src="/profile.jpg" alt="Betuel Arones Silva" className="profile-photo" />
         </div>
       </div>
     </section>
