@@ -217,7 +217,7 @@ function Experience() {
             </button>
 
             <div className="experience-progress-indicator" aria-live="polite">
-              {pages.slice(1, -1).map((page, index) => {
+              {pages.slice(1, -1).map((_, index: number) => {
                 const isActive = currentPageData.kind === 'experience' && currentPageData.index === index
                 return (
                   <button
