@@ -167,6 +167,11 @@
   "footer": {
     "copyright": "© 2026 Betuel. All rights reserved."
   },
+  "stats": {
+    "years": "Years of learning",
+    "stacks": "Core stacks",
+    "ownership": "Ownership mindset"
+  },
   "preloader": {
     "text": "STARTING ENVIRONMENT..."
   }

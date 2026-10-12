@@ -167,6 +167,11 @@
   "footer": {
     "copyright": "© 2026 Betuel. Todos los derechos reservados."
   },
+  "stats": {
+    "years": "Años de aprendizaje",
+    "stacks": "Stacks principales",
+    "ownership": "Mentalidad de ownership"
+  },
   "preloader": {
     "text": "INICIANDO ENTORNO..."
   }

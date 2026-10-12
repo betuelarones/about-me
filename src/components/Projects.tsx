@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-const projectThumbs = ['/profile.jpg', '/profile.jpg', '/profile.jpg']
+const projectThumbs = ['/profile.png', '/profile.png', '/profile.png']
 
 function Projects() {
   const { t } = useTranslation()

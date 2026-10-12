@@ -71,18 +71,15 @@ function Experience() {
     setDirection(nextPage > currentPage ? 1 : -1)
     setIsAnimating(true)
 
-    const duration = prefersReducedMotion.current ? 180 : 700
+    const duration = prefersReducedMotion.current ? 150 : 700
 
     window.setTimeout(() => {
       setCurrentPage(nextPage)
-      window.setTimeout(() => setIsAnimating(false), 80)
+      window.setTimeout(() => setIsAnimating(false), 50)
     }, duration / 2)
   }
 
   const currentPageData = pages[currentPage]
-  const experienceProgressIndex = currentPageData.kind === 'experience'
-    ? String(currentPage).padStart(2, '0')
-    : '00'
 
   const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = event.touches[0].clientX
@@ -194,58 +191,79 @@ function Experience() {
         </h2>
 
         <div className="experience-book-shell">
-          <div className="experience-book-frame">
-            <div
-              className={`experience-book-viewport ${isAnimating ? 'is-animating' : ''} ${direction === 1 ? 'turn-next' : 'turn-prev'}`}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            >
-              <div className="experience-book-shadow" aria-hidden="true" />
-              {renderCurrentPage()}
-            </div>
-          </div>
-
-          <div className="experience-book-controls" aria-label={t('experience.navigationLabel')}>
+          <div className="experience-carousel-container">
             <button
               type="button"
-              className="experience-nav-button"
+              className="experience-nav-button experience-nav-prev"
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 0 || isAnimating}
               aria-label={t('experience.previous')}
             >
-              ← {t('experience.previous')}
+              ←
             </button>
 
-            <div className="experience-progress-indicator" aria-live="polite">
-              {pages.slice(1, -1).map((_, index: number) => {
-                const isActive = currentPageData.kind === 'experience' && currentPageData.index === index
-                return (
-                  <button
-                    key={`progress-${index}`}
-                    type="button"
-                    className={isActive ? 'active' : ''}
-                    onClick={() => handlePageChange(index + 1)}
-                    aria-label={`${t('experience.page')} ${index + 1}`}
-                  >
-                    {String(index + 1).padStart(2, '0')}
-                  </button>
-                )
-              })}
+            <div className="experience-book-frame">
+              <div className="experience-carousel-viewport">
+                {currentPageData.kind === 'experience' && currentPage > 0 && (
+                  <div className="experience-card-peek experience-card-peek-prev">
+                    <div className="experience-book-page experience-book-content">
+                      <div className="experience-book-page-header">
+                        <span className="mono-text experience-page-label">{t('experience.pageLabel')} {String(currentPage - 1).padStart(2, '0')}</span>
+                        <div className="experience-brand-mark">
+                          <img src={items[currentPage - 1].image} alt={items[currentPage - 1].organization} />
+                        </div>
+                      </div>
+                      <div className="experience-book-page-body">
+                        <div className="experience-book-topline">
+                          <span className="mono-text accent">{items[currentPage - 1].category}</span>
+                        </div>
+                        <h3>{items[currentPage - 1].role}</h3>
+                        <h4>{items[currentPage - 1].organization}</h4>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                <div
+                  className={`experience-book-viewport ${isAnimating ? 'is-animating' : ''} ${direction === 1 ? 'turn-next' : 'turn-prev'}`}
+                  onTouchStart={handleTouchStart}
+                  onTouchEnd={handleTouchEnd}
+                >
+                  <div className="experience-book-shadow" aria-hidden="true" />
+                  {renderCurrentPage()}
+                </div>
+
+                {currentPageData.kind === 'experience' && currentPage < items.length && (
+                  <div className="experience-card-peek experience-card-peek-next">
+                    <div className="experience-book-page experience-book-content">
+                      <div className="experience-book-page-header">
+                        <span className="mono-text experience-page-label">{t('experience.pageLabel')} {String(currentPage + 1).padStart(2, '0')}</span>
+                        <div className="experience-brand-mark">
+                          <img src={items[currentPage].image} alt={items[currentPage].organization} />
+                        </div>
+                      </div>
+                      <div className="experience-book-page-body">
+                        <div className="experience-book-topline">
+                          <span className="mono-text accent">{items[currentPage].category}</span>
+                        </div>
+                        <h3>{items[currentPage].role}</h3>
+                        <h4>{items[currentPage].organization}</h4>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
 
             <button
               type="button"
-              className="experience-nav-button"
+              className="experience-nav-button experience-nav-next"
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === pages.length - 1 || isAnimating}
               aria-label={t('experience.next')}
             >
-              {t('experience.next')} →
+              →
             </button>
-          </div>
-
-          <div className="experience-book-footer-status">
-            <span>{experienceProgressIndex} / {String(items.length).padStart(2, '0')}</span>
           </div>
         </div>
       </div>
